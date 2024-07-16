@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student Information</title>
+</head>
+<body>
+    <h1>Add New Student</h1>
+    <form id="addStudentForm">
+        <input type="text" id="student_id" placeholder="Student ID" required>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="gender" placeholder="Gender" required>
+        <input type="text" id="dorm_number" placeholder="Dorm Number" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <button type="submit">Add Student</button>
+    </form>
+    <button onclick="window.location.href='/'">Home</button>
+    <button onclick="window.location.href='/search'">Search Student</button>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

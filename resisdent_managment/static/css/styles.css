@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px; /* 提供周围空间，避免内容直接贴边 */
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    margin-top: 30px; /* 在内容容器上方添加外边距 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 960px; /* 限制容器宽度 */
+    margin: 20px auto; /* 水平居中显示 */
+}
+input[type="text"], input[type="number"], select {
+    width: calc(100% - 24px); /* 减少宽度以考虑内边距 */
+    padding: 12px;
+    margin: 10px 0; /* 增加上下外边距 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px; /* 与表单字段间增加间隔 */
+    width: auto; /* 自动宽度，根据内容调整 */
+    display: block; /* 使按钮单独一行显示 */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* 增加上下外边距 */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* 增加单元格内边距 */
+    text-align: left;
+}
+
+th {
+    background-color: #2196F3;
+    color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="number"], select {
+        padding: 8px;
+        width: 100%; /* 确保在小屏幕上不超出容器宽度 */
+    }
+
+    button {
+        padding: 10px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dormitory Management System</title>
+</head>
+<body>
+
+    <h1>Dormitory Management System</h1>
+    <button onclick="window.location.href='/add'">Add New Student</button>
+    <button onclick="window.location.href='/search'">Search Student</button>
+    <button onclick="fetchStudents()">Refresh List</button>
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Dorm Number</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student rows will be added here -->
+        </tbody>
+    </table>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

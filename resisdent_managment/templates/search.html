@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Modify Student Information</title>
+</head>
+<body>
+    
+    <h1>Search and Modify Student Information</h1>
+    <input type="text" id="searchStudentId" placeholder="Enter Student ID">
+    <button onclick="searchStudent()">Search</button>
+    <div id="studentInfo"></div>
+    <button onclick="window.location.href='/'">Home</button>
+    <button onclick="window.location.href='/add'">Add New Student</button>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+
+</html>
